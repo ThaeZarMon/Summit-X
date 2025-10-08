@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SummitX</title>
+    <!-- google font//-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn// -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icons// -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Font awesome cdn// -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- favicon// -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <!-- External Style Sheet// -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav section// -->
+    <nav class="navbar sticky-top">
+      <div class="nav-text container-fluid">
+        <a class="title ms-4" href="index.html"
+          >SummitX<i class="bi bi-camera-reels-fill ms-3"></i
+        ></a>
+        <div class="nav-link px-5 py-3 text-center d-none d-lg-inline">
+          <a class="navbar-brand active" href="index.html">Home</a>
+          <a class="navbar-brand" aria-current="page" href="ticket.html"
+            >Ticket</a
+          >
+
+          <a class="navbar-brand" href="contact.html">Contact</a>
+        </div>
+
+        <!-- search bar// -->
+        <div class="formsearch d-none d-lg-inline">
+          <form class="d-flex" role="search">
+            <input
+              class="form me-2"
+              style="border-radius: 5px; border: 1px solid #f5f5f5"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- icon// -->
+        <button
+          class="navbar-toggler d-end d-lg-none"
+          style="background-color: #f5f5f5; border: 1px solid #f5f5f5"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SummitX</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body bg-secondary">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Booking
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="ticket.html">Ticket</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form me-2"
+                style="
+                  border-radius: 5px;
+                  border: 1px solid #f5f5f5;
+                  background-color: #f5f5f5;
+                "
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <i class="bi bi-search" style="color: #f5f5f5"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header section// -->
+    <section id="about-us" class="p-5 position-relative">
+      <div class="container head-title d-none d-lg-block">
+        <p>
+          At SummitX Cinema, <br />
+          we believe movies are more than just entertainment— <br />
+          they're experiences that inspire, connect, and create lasting
+          memories.
+          <br /><br />SummitX isn't just a cinema—it's where stories come alive.
+        </p>
+        <a href="#top" class="btn favourite p-2">Find Your Favourite</a>
+        <!-- <a href="#top" class="btn Favourite mb-1">Find Your Favourite</a> -->
+      </div>
+      <div class="container medium text-center d-lg-none">
+        <p>SummitX isn't just a cinema—it's where stories come alive.</p>
+      </div>
+    </section>
+    <!-- pointer section// -->
+    <section id="pointer">
+      <div class="row ps-5 ms-2 ms-lg-5 mt-5 d-flex flex-column flex-md-row">
+        <div class="col mt-2">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="#top" class="text-decoration-none"
+                ><i class="bi bi-fire"></i>Hot</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col mt-2">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="#movie" class="text-decoration-none"
+                ><i class="bi bi-film"></i>Available</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col mt-2">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="#movie" class="text-decoration-none"
+                ><i class="bi bi-calendar4-event"></i>Events</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Movie section// -->
+    <section id="top" class="mt-5">
+      <h3>This Week's Top Movies</h3>
+      <div class="container">
+        <div class="row ms-5 top-movie">
+          <div class="col-md-6 col-lg-3 mt-5 text-center">
+            <div class="card one">
+              <img src="image/death.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center d-none d-md-inline-block">
+                <h5 class="card-title">I</h5>
+                <ul class="list-unstyled">
+                  <li>Death Whispere 3</li>
+                  <li>Horror</li>
+                  <li>Thailand</li>
+                </ul>
+                <a href="ticket.html" class="btn mt-3">Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mt-5">
+            <div class="card two">
+              <img src="image/the rae.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center d-none d-md-inline-block">
+                <h5 class="card-title">II</h5>
+                <ul class="list-unstyled">
+                  <li>The Exorcist</li>
+                  <li>Horror</li>
+                  <li>Thailand</li>
+                </ul>
+                <a href="ticket.html" class="btn mt-3">Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mt-5">
+            <div class="card three">
+              <img src="image/kantara.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center d-none d-md-inline-block">
+                <h5 class="card-title">III</h5>
+                <ul class="list-unstyled">
+                  <li>KanTaRa</li>
+                  <li>Action/Horror</li>
+                  <li>Hindi</li>
+                </ul>
+                <a href="ticket.html" class="btn mt-3">Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mt-5">
+            <div class="card four">
+              <img
+                src="image/The Shadow's.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center d-none d-md-inline-block">
+                <h5 class="card-title">IV</h5>
+                <ul class="list-unstyled">
+                  <li>Shadow's Edge</li>
+                  <li>Action</li>
+                  <li>English</li>
+                </ul>
+                <a href="#" class="btn mt-3">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Movies// -->
+    <section id="movie" class="pb-5 text-center text-lg-start">
+      <div class="container">
+        <div class="row d-flex flex-column flex-md-row">
+          <div class="col-md-4 mt-5">
+            <h3>Available Movies</h3>
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="800">
+                  <img src="image/1.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="800">
+                  <img src="image/2.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="800">
+                  <img src="image/3.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="800">
+                  <img src="image/4.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="800">
+                  <img src="image/5.jpg" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <h3>Events</h3>
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="800">
+                  <img src="image/event1.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="800">
+                  <img src="image/event2.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="800">
+                  <img src="image/event3.jpg" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-5 text-center text-lg-start">
+            <div
+              class="container p-4"
+              style="height: 100%; background-color: rgba(245, 245, 245, 0.1)"
+            >
+              <h3 class="ms-0 ms-md-5">Services</h3>
+              <ul class="list-unstyled mt-5 ms-0 ms-md-5">
+                <li>LED Screens</li>
+                <li>3D Soundscape</li>
+                <li>Safe Environment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section// -->
+    <footer>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center text-md-start">
+            <h5>Recommend</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none">Horror</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Action</a>
+              </li>
+              <li><a href="#" class="text-decoration-none">Commedy</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Romatic</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center">
+            <h5>Events</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none">Introduction</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Fan Sign</a>
+              </li>
+              <li><a href="#" class="text-decoration-none">Live</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Talk Show</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center text-md-end">
+            <h5>Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none">Restaurant</a></li>
+              <li>
+                <a href="#" class="text-decoration-none"
+                  >Protect Air-pollution</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Green Environment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-md-4 text-center text-md-start"
+          style="color: #f5f5f5; font-family: Montserrat"
+        >
+          <i class="bi bi-facebook me-2"></i>
+          <i class="bi bi-youtube me-2"></i>
+          <i class="bi bi-linkedin me-2"></i>
+          <i class="bi bi-twitter-x me-2"></i>
+        </div>
+
+        <div
+          class="col-md-4 text-center"
+          style="color: #f5f5f5; font-family: Montserrat"
+        >
+          <p>&copy; 2025 SummitX.</p>
+        </div>
+
+        <div
+          class="col-md-4 text-center text-md-end"
+          style="color: #f5f5f5; font-family: Montserrat"
+        >
+          <p>More than A Cinema.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap cdn js// -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
